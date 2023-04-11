@@ -25,7 +25,7 @@ The point cloud is a mass of points consisting of vehicles, street objects, and 
 
 Random Sample Consensus (RANSAC) was implemented to segment the road plane from the object plane. RANSAC detects outliers in data by randomly picking a subsample of the data and fits a model through it, such as a line or a plane. Then the iteration with the highest number of inliers or the lowest noise is used as the best model (Figure 1). This idea is used to determine what points are part of the road plane.
 
-<img src="media/ransac-animation.gif" width="640" height="480" />
+<img src="assets/ransac-animation.gif" width="640" height="480" />
 <figcaption><b>Figure 1: RANSAC algorithm for line fitting with outliers (Source: Udacity)</b></figcaption>
 </br>
 
@@ -38,7 +38,7 @@ RANSAC for a plane was implemented with the following functions in `processPoint
 
 After segmenting the point cloud (Figure 2), the object plane is used for object detection.
 
-<img src="media/plane-segmentation.png" width="640" height="480" />
+<img src="assets/plane-segmentation.png" width="640" height="480" />
 <figcaption><b>Figure 2: Segmented point cloud with road plane (green points) and object plane (red points)</b></figcaption>
 </br>
 
@@ -59,7 +59,7 @@ Euclidean clustering was used to establish indexes to point clusters based on th
 
 After establishing individual clusters, bounding boxes were added in the point cloud based on the cluster's max width and height (Figure 3). 
 
-<img src="media/clustering.png" width="700" height="400" />
+<img src="assets/clustering.png" width="700" height="400" />
 <figcaption><b>Figure 3: Bounding boxes on detected objects</b></figcaption>
 
 </br>
