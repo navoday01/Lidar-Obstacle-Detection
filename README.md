@@ -1,4 +1,4 @@
-# Project 1: Lidar Obstacle Detection
+# Lidar Obstacle Detection
 This repository contains the C++ code developed to detect objects in a point cloud stream.
 
 ## Table of Contents
@@ -64,24 +64,19 @@ After establishing individual clusters, bounding boxes were added in the point c
 
 ### Stream Real Point Cloud Data
 
-After the detection pipeline was finished, the pipeline was appied to a data stream using real point cloud data. The detecton pipeline was able to quickly cluster and detect objects in real time (Figures 4 and 5).
+After the detection pipeline was finished, the pipeline was appied to a data stream using real point cloud data. The detecton pipeline was able to quickly cluster and detect objects in real time which can be observed in following animations.
 
-<img src="../media/project-1-1.gif" width="700" height="400" />
-<figcaption><b>Figure 4: Object detection from point cloud stream (3/4th view)</b></figcaption>
-
-</br>
-
-</br>
-
-<img src="../media/project-1-2.gif" width="700" height="400" />
-<figcaption><b>Figure 5: Object detection from point cloud stream (1st person view)</b></figcaption>
-
-</br>
-
+![Alt text](assets/project-1-1.gif)
+:--:
+*Object detection from point cloud stream (Orthographic View)*
+:--:
+![Alt text](assets/project-1-2.gif)
+:--:
+*Object detection from point cloud stream (First Person View)*
 
 # Compiling and Running the Executable
 ```shell
-cd ~/Project_1_Lidat_Obstacle_Detection
+cd ~/Lidar_Obstacle_Detection
 mkdir build && cd build 
 cmake ..
 make
