@@ -23,7 +23,7 @@ For this project submission, the following tasks were completed for object detec
 ### RANSAC
 The point cloud is a mass of points consisting of vehicles, street objects, and road. Because we are mainly interested in vehicles and street objects, the road points were be filtered out. Filtering the road points will reduce the data size and make the object detection algorithm run faster and more efficiently. 
 
-Random Sample Consensus (RANSAC) was implemented to segment the road plane from the object plane. RANSAC detects outliers in data by randomly picking a subsample of the data and fits a model through it, such as a line or a plane. Then the iteration with the highest number of inliers or the lowest noise is used as the best model (Figure 1). This idea is used to determine what points are part of the road plane.
+Random Sample Consensus (RANSAC) was implemented to segment the road plane from the object plane. RANSAC detects outliers in data by randomly picking a subsample of the data and fits a model through it, such as a line or a plane. Then the iteration with the highest number of inliers or the lowest noise is used as the best model. This idea is used to determine what points are part of the road plane.
 
   ![Alt text](assets/ransac-animation.gif)
 :--:
@@ -35,11 +35,11 @@ RANSAC for a plane was implemented with the following functions in `processPoint
 2. `ProcessPointClouds::SegmentPlaneRansac`: takes a point cloud and calls `Ransac3DHelper` to process the set of inlier points
 3. `ProcessPointClouds::SeperateClouds`: seperates the point cloud from inlier points (road plane) and outlier points (object plane)
 
-After segmenting the point cloud (Figure 2), the object plane is used for object detection.
+After segmenting the point cloud, the object plane is used for object detection.
 
-<img src="assets/plane-segmentation.png" width="640" height="480" />
-<figcaption><b>Figure 2: Segmented point cloud with road plane (green points) and object plane (red points)</b></figcaption>
-</br>
+  ![Alt text](assets/pointcloud-sample.png)|![Alt text](assets/plane-segmentation.png)
+:--:|
+*Point cloud before Segmentation*| *Segmented point cloud with road plane (green points) and object plane (red points)*
 
 ### KD-Tree
 Because the point cloud contains point data with various densities in different locations, implementing a clustering algorithm at this stage would be very slow. To identify clusters and remove areas with sparse points, a KD-Tree method was created to process 3D points.
