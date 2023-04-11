@@ -73,15 +73,28 @@ After the detection pipeline was finished, the pipeline was appied to a data str
 *Object detection from point cloud stream (First Person View)*
 
 # Compiling and Running the Executable
-clone the repository 
+
+To run the above project, clone the repository by 
 ```shell
 git clone https://github.com/navoday01/Lidar-Obstacle-Detection.git
 ```
-
+Now go to Lidar-Obstacle-Detection folder
 ```shell
-cd ~/Lidar_Obstacle_Detection
+cd Lidar-Obstacle-Detection/
+```
+Now create a build folder and go to it
+```shell
 mkdir build && cd build 
+```
+Run the following command to build system generator
+```shell
 cmake ..
+```
+Run the following command to drive the compiler and other build tools to build the code
+```shell
 make
+```
+Run the code by entering following in the terminal
+```shell
 ./environment
 ```
