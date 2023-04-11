@@ -25,16 +25,11 @@ The point cloud is a mass of points consisting of vehicles, street objects, and 
 
 Random Sample Consensus (RANSAC) was implemented to segment the road plane from the object plane. RANSAC detects outliers in data by randomly picking a subsample of the data and fits a model through it, such as a line or a plane. Then the iteration with the highest number of inliers or the lowest noise is used as the best model (Figure 1). This idea is used to determine what points are part of the road plane.
 
-<img src="assets/ransac-animation.gif" width="640" height="480" />
-<figcaption><b>Figure 1: RANSAC algorithm for line fitting with outliers (Source: Udacity)</b></figcaption>
-</br>
 
-</br>
-<p align = 'center'>
 ![Alt text](assets/ransac-animation.gif)
  :--:
   *RANSAC algorithm for line fitting with outliers (Source: Udacity)* 
-</p>
+
 
 RANSAC for a plane was implemented with the following functions in `processPointClouds.cpp`: 
 1. `ProcessPointClouds::Ransac3DHelper`: helper function which iteratively picks three points to form a plane. Returns a set of inliers for the plane of best fit if found
