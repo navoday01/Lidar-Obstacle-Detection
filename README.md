@@ -31,7 +31,7 @@ Random Sample Consensus (RANSAC) was implemented to segment the road plane from 
 
 </br>
 
-![Alt text](ssets/ransac-animation.gif)|
+![Alt text](assets/ransac-animation.gif)|
  :--:|
   *RANSAC algorithm for line fitting with outliers (Source: Udacity)* |
 
