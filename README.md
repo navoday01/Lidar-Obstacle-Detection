@@ -67,11 +67,11 @@ After establishing individual clusters, bounding boxes were added in the point c
 After the detection pipeline was finished, the pipeline was appied to a data stream using real point cloud data. The detecton pipeline was able to quickly cluster and detect objects in real time which can be observed in following animations.
 
 ![Alt text](assets/project-1-1.gif)
-:--:
+
 *Object detection from point cloud stream (Orthographic View)*
 :--:
 ![Alt text](assets/project-1-2.gif)
-:--:
+
 *Object detection from point cloud stream (First Person View)*
 
 # Compiling and Running the Executable
