@@ -37,8 +37,8 @@ RANSAC for a plane was implemented with the following functions in `processPoint
 
 After segmenting the point cloud, the object plane is used for object detection.
 
-  ![](assets/pointcloud-sample.png)|![](assets/plane-segmentation.png)
-:--:|
+  ![Alt text](assets/pointcloud-sample.png)|![Alt text](assets/plane-segmentation.png)
+:--:|:--:
 *Point cloud before Segmentation*| *Segmented point cloud with road plane (green points) and object plane (red points)*
 
 ### KD-Tree
