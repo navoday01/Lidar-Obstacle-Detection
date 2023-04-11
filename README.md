@@ -31,6 +31,10 @@ Random Sample Consensus (RANSAC) was implemented to segment the road plane from 
 
 </br>
 
+![Alt text](ssets/ransac-animation.gif)|
+ :--:|
+  *RANSAC algorithm for line fitting with outliers (Source: Udacity)* |
+
 RANSAC for a plane was implemented with the following functions in `processPointClouds.cpp`: 
 1. `ProcessPointClouds::Ransac3DHelper`: helper function which iteratively picks three points to form a plane. Returns a set of inliers for the plane of best fit if found
 2. `ProcessPointClouds::SegmentPlaneRansac`: takes a point cloud and calls `Ransac3DHelper` to process the set of inlier points
