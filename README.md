@@ -69,7 +69,6 @@ After the detection pipeline was finished, the pipeline was appied to a data str
 ![Alt text](assets/project-1-1.gif)
 :--:
 *Object detection from point cloud stream (Orthographic View)*
-:--:
 ![Alt text](assets/project-1-2.gif)
 :--:
 *Object detection from point cloud stream (First Person View)*
