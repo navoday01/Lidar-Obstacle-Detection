@@ -56,12 +56,11 @@ Euclidean clustering was used to establish indexes to point clusters based on th
 - `euclideanCluster`: returns a vector of each cluster's list of point indexes based on the results from `euclidenHelper`
 - `ProcessPointClouds::EuclideanClustering`: returns a list of clusters that meet the user defined clustering tolerance
 
-After establishing individual clusters, bounding boxes were added in the point cloud based on the cluster's max width and height (Figure 3). 
+After establishing individual clusters, bounding boxes were added in the point cloud based on the cluster's max width and height. 
 
-<img src="assets/clustering.png" width="700" height="400" />
-<figcaption><b>Figure 3: Bounding boxes on detected objects</b></figcaption>
-
-</br>
+![Alt text](assets/clustering.png)
+:--:
+*Bounding boxes on detected objects*
 
 ### Stream Real Point Cloud Data
 
