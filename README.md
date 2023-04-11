@@ -74,7 +74,9 @@ After the detection pipeline was finished, the pipeline was appied to a data str
 
 # Compiling and Running the Executable
 clone the repository 
-```git clone https://github.com/navoday01/Lidar-Obstacle-Detection.git```
+```shell
+git clone https://github.com/navoday01/Lidar-Obstacle-Detection.git
+```
 
 ```shell
 cd ~/Lidar_Obstacle_Detection
